@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <title>Franco Pet Shop - Contacto</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="container-fluid" id="header">
+            <nav class="navbar">
+                <a id="title" href="./home.html">
+                    <h2>Franco Pet Shop <i class="fas fa-dog"></i></h2>
+                </a>
+                <button class="toggle btn btn-secondary">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-menu nav-menu_visible">
+                    <ul class="nav nav-pills ">
+                        <li class="nav-item"><a class="nav-link" href="./home.html"><i class="fas fa-home"></i>
+                                Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./contactenos.html"><i class="fas fa-paw"></i>
+                                Contáctanos</a></li>
+                    </ul>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-store"></i> Store</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                            <li class="nav-item"><a class="dropdown-item" href="./farmacia.html"><i
+                                        class="fas fa-prescription-bottle-alt"></i> Farmacia</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./juguetes.html"><i
+                                        class="fas fa-bone"></i>
+                                    Juguetería</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main id="main">
+
+        <section id="section-form">
+            <h3>Contacto</h3>
+            <form id="app" class="d-flex">
+                <div class="mb-3">
+                    <label class="form-label" for="name">Nombre: </label><input class="form-control" type="text"
+                        id="name" placeholder="Nombre">
+                    <label class="form-label" for="last_name">Apellido: </label><input class="form-control" type="text"
+                        id="last_name" placeholder="Apellido">
+                </div>
+                <h6 class="form-label">Mascota:</h5>
+                    <div class="container_form-check">
+                        <div class="form-check">
+                            <label class="form-check-label" for="gato">Gato</label><input class="form-check-radio"
+                                type="radio" name="pet" id="gato">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" for="perro">Perro</label><input class="form-check-radio"
+                                type="radio" name="pet" id="perro">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" for="ornitorrinco">Ornitorrinco</label><input
+                                class="form-check-radio" type="radio" name="pet" id="Ornitorrinco">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" for="otro">Otro</label><input class="form-check-radio"
+                                type="radio" name="pet" id="otra">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="comentarios:">Comentarios: </label>
+                        <textarea class="form-control" name="comentarios" id="comentarios"
+                            placeholder="Ingrese un comentario" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" v-on:click="enviarMensaje">Enviar!</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <ul>
+            <li><img src="./img/logo-removebg-preview.png" alt="logo" id='logo'></li>
+            <li> © Todos los derechos reservados</li>
+        </ul>
+        <ul>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Politica de privacidad</a> </li>
+            <li><a href="#">Términos y condiciones</a> </li>
+        </ul>
+        <ul>
+            <li><a href="#">Tel: 263412-123-1231</a> </li>
+            <li><a href="#">francopetshop@gmail.com</a> </li>
+            <div id="logos">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </li>
+            </div>
+        </ul>
+
+    </footer>
+
+</body>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="./scripts/script.js"></script>
+</body>
+
+</html>
